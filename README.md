@@ -37,6 +37,7 @@ docker-compose logs -f
 
 # 配置客户端
 
+客户端下载地址 https://github.com/oclip/oclip-client/releases
 
 Linux 为 `~/.oclip` , Windows 使用菜单 `Open Config` 编辑
 
