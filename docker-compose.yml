@@ -1,0 +1,20 @@
+version: '2'
+
+# ports: 2601
+
+services:
+
+    oclip-lite:
+        build:
+            context: ./
+            dockerfile: Dockerfile
+        container_name: oclip-lite
+        restart: always
+        ports:
+            - "2601:80"
+        volumes:
+            - '/etc/localtime:/etc/localtime:ro'
+            - '/etc/timezone:/etc/timezone:ro'
+            - ./conf.d:/etc/nginx/conf.d
+            - ./src:/data/oclip_src
+
