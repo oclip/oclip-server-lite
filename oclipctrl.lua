@@ -1,4 +1,4 @@
-#!/bin/lua
+#!/usr/bin/env lua
 
 local function usage()
     print([[

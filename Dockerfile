@@ -6,6 +6,7 @@ RUN /usr/local/openresty/bin/opm get fperrad/lua-messagepack
 
 ADD ./oclipctrl.lua /bin/oclipctrl
 RUN chmod +x /bin/oclipctrl
+RUN yum install -y lua
 
 RUN mkdir -p /data/oclip_upload && chmod 777 /data/oclip_upload
 
